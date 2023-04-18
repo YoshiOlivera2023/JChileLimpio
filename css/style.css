@@ -63,3 +63,18 @@ select {
     margin: 10px 10px;
     display: inline-block;
 }
+
+.carta_fondo{
+    background-color: rgb(175, 238, 241);
+    border: 5px solid rgb(101, 246, 243);
+    padding: 10px 40px;
+    margin-top: 20px;
+    opacity: 80%;
+}
+
+.carta{
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 10px;
+    margin: 50px;
+}

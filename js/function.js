@@ -150,6 +150,3 @@ function enviarForm(){
     return false;
 }
 
-function crearCarta(){
-    
-}
