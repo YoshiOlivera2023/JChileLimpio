@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Fundaci&oacute;n Chile Limpio</title>
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <script type="text/javascript" src="../JChileLimpio/js/function.js"></script>
+    </head>
+
+    <body>
+        <div class="caja1">
+            <h1>Fundaci&oacute;n Chile Limpio</h1>
+        </div>
+        
+        <p>
+            <div class="caja2">
+                <h2>
+                    Formulario de postulación para el trabajo de apoyo ambiental en Chiloé.
+                </h2>
+            </div>
+
+            <div class="caja3">
+            <form>
+                <fieldset>
+                    <legend> <b>Formulario</b> </legend>
+                    <div>
+                        <label for="rut">Rut: </label>
+                        <input type="text" id = "rut">
+                    </div><br>
+                    <div>
+                        <label for="apPaterno">Apellido paterno: </label>
+                        <input type="text" id = 'apPaterno'>
+                    </div><br>
+                    <div>
+                        <label for="apMaterno">Apellido materno: </label>
+                        <input type="text" id = 'apMaterno'>
+                    </div><br>
+                    <div>
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" id = 'nombre'>
+                    </div><br>
+                    <div>
+                        <label for="fechaNac">Fecha de nacimiento: </label>
+                        <input type="date" id = 'fechaNac'>
+                    </div><br>
+                    <div>
+                        <label for="edad">Edad: </label>
+                        <input type="number" id = 'edad'>
+                    </div><br>
+                    <div class="container">
+                        <div class="div1"> G&eacute;nero: <br> </div>
+                            <select>
+                                <option selected>Selecciona una opción</option>
+                                <option value="Masculino"> Masculino </option>
+                                <option value="Femenino"> Femenino </option>
+                            </select>  
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Email: </label>
+                        <input type="text" id = 'email'>
+                    </div><br>
+                    <div>
+                        <label for="celular">Celular: </label>
+                        <input type="text" id = 'celular'>
+                    </div><br>
+                    <div>
+                        <label for="profesion">Profesi&oacute;n: </label>
+                        <input type="text" id = 'profesion'>
+                    </div><br>
+                    <div>
+                        <label for="motivacion">Motivaci&oacute;n: </label>
+                        <textarea id = "motivacion"></textarea>
+                    </div><br>
+
+                    <div class="boton"><input type="submit" onclick = "enviarForm()" value = "Enviar"></div>
+                    <div class="boton"><input type="submit" onclick = "crearCarta()" value = "Crear carta"></div>
+
+                </fieldset>
+            </form>
+            </div>
+        </p>
+    </body>
+</html>

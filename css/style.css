@@ -1,0 +1,65 @@
+body{
+    background-color: darkcyan;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/chiloe.jpg);
+}
+
+label{
+    display: block;
+    float: left;
+    width: 250px;
+}
+
+.container {
+    text-align: left;
+}
+
+.div1 {
+    display: inline-block;
+    width: 250px;
+    vertical-align: left;
+}
+
+select {
+    display: inline-block;
+    vertical-align: middle;
+}
+  
+.caja1{
+    background-color: rgb(168, 61, 61);
+    padding: 5px 40px;
+    margin: 0px auto;
+    text-align: center;
+    border: 5px solid rgb(252, 72, 72);
+    height: 100px;
+    width: 800px;
+    opacity: 85%;
+}
+
+.caja2{
+    background-color: darkgoldenrod;
+    border: 5px solid rgb(252, 72, 72);
+    height: 80px;
+    width: auto;
+    margin: 10px auto;
+    padding: 10px 40px;
+    opacity: 85%;
+    text-align: center;
+}
+
+.caja3{
+    background-color: rgb(175, 238, 241);
+    padding: 10px 40px;
+    opacity: 85%; 
+}
+
+.div_select{
+    display: inline-block;
+    width: 250px;;
+}
+
+.boton{
+    margin: 10px 10px;
+    display: inline-block;
+}
