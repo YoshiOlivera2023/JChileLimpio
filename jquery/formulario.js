@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    $("creaCarta").hide();
-    $("formulario").submit(function(event){
+    $("#creaCarta").hide();
+    $("#formulario").submit(function(event){
 
         event.preventDefault();
 
@@ -54,7 +54,7 @@ $(document).ready(function() {
         validacion = false;
     }
     else{
-        $("#mnombre").html("El nombre debe contener entre 3 y 20 caracteres.");
+        $("#mnombre").html("");
     }
     
     //Validación de fecha de nacimiento
@@ -76,7 +76,7 @@ $(document).ready(function() {
     }
     
     //Validación de género
-    if(genero != "Masculino" || genero != "Femenino"){
+    if(genero === ""){
         $("#mgenero").html("Debe seleccionar un género.");
         validacion = false;
     }
@@ -128,10 +128,10 @@ $(document).ready(function() {
     }
 
     if(validacion ==  true){
-        $("creaCarta").show();
+        $("#creaCarta").show();
 
         
-        texto = sr+" "+nombre+" "+apellidoPaterno+".<br><br>"+
+        texto = sr+" "+nombre+" "+appaterno+".<br><br>"+
         "R.U.T.: "+rut+
         "<br>Género: "+genero+
         
@@ -139,7 +139,7 @@ $(document).ready(function() {
   
         "<br><br>Me dirijo a ustedes para presentar mi candidatura para la posición de apoyo ambiental en Chiloé, la cual vi anunciada en su sitio web. Creo que mi formación y experiencia pueden ser de gran utilidad para su organización."+
         
-        "<br><br>Mi nombre es "+nombre+" "+apellidoPaterno+" "+apellidoMaterno +" y tengo "+edad+" años. Mi fecha de nacimiento es "+ fechaNac +". Soy graduado en "+profesion+", y mi motivacion es "+motivacion+
+        "<br><br>Mi nombre es "+nombre+" "+appaterno+" "+apmaterno +" y tengo "+edad+" años. Mi fecha de nacimiento es "+ fechaNac +". Soy graduado en "+profesion+", y mi motivacion es "+motivacion+
         "<br><br>Además, he tenido la oportunidad de participar en proyectos de investigación relacionados con el medio ambiente y la conservación de especies nativas. Esto me ha permitido desarrollar habilidades en el manejo de herramientas y técnicas de investigación, así como en la interpretación de datos científicos."+
         
         "<br><br>Estoy seguro de que mi experiencia y conocimientos pueden ser útiles para su organización y estoy muy motivado para aprender más sobre las iniciativas y proyectos que desarrollan. Quedo a su disposición para ampliar cualquier información que necesiten en relación a mi formación y experiencia."+
@@ -150,7 +150,9 @@ $(document).ready(function() {
         
         "<br><br>Atentamente,<br><br><br>"+
         
-        nombre+" "+apellidoPaterno+" "+apellidoMaterno;
+        nombre+" "+appaterno+" "+apmaterno;
+
+        $("#carta").html(texto)
         event.preventDefault();
     }
 
