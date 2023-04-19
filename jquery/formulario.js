@@ -130,16 +130,18 @@ $(document).ready(function() {
     if(validacion ==  true){
         $("#creaCarta").show();
 
+        arreglo=fechaNac.split("-");
+        let fechaNew2=arreglo[2]+"-"+arreglo[1]+"-"+arreglo[0];
         
-        texto = sr+" "+nombre+" "+appaterno+".<br><br>"+
-        "R.U.T.: "+rut+
+        texto = sr+" "+nombre+" "+appaterno+"."+
+        "<br>R.U.T.: "+rut+
         "<br>Género: "+genero+
         
         "<br><br>Estimados señores,<br>"+
   
         "<br><br>Me dirijo a ustedes para presentar mi candidatura para la posición de apoyo ambiental en Chiloé, la cual vi anunciada en su sitio web. Creo que mi formación y experiencia pueden ser de gran utilidad para su organización."+
         
-        "<br><br>Mi nombre es "+nombre+" "+appaterno+" "+apmaterno +" y tengo "+edad+" años. Mi fecha de nacimiento es "+ fechaNac +". Soy graduado en "+profesion+", y mi motivacion es "+motivacion+
+        "<br><br>Mi nombre es "+nombre+" "+appaterno+" "+apmaterno +" y tengo "+edad+" años. Mi fecha de nacimiento es "+ fechaNew2 +". Soy graduado de "+profesion+", y mi motivacion es "+motivacion+"."+
         "<br><br>Además, he tenido la oportunidad de participar en proyectos de investigación relacionados con el medio ambiente y la conservación de especies nativas. Esto me ha permitido desarrollar habilidades en el manejo de herramientas y técnicas de investigación, así como en la interpretación de datos científicos."+
         
         "<br><br>Estoy seguro de que mi experiencia y conocimientos pueden ser útiles para su organización y estoy muy motivado para aprender más sobre las iniciativas y proyectos que desarrollan. Quedo a su disposición para ampliar cualquier información que necesiten en relación a mi formación y experiencia."+
