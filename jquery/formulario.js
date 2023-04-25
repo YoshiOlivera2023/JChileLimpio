@@ -131,8 +131,47 @@ $(document).ready(function() {
         $("#creaCarta").show();
 
         arreglo=fechaNac.split("-");
-        let fechaNew2=arreglo[2]+"-"+arreglo[1]+"-"+arreglo[0];
-        
+        let mes = "";
+        if(arreglo[1] == "01"){
+            mes = "enero";
+        }
+        else if(arreglo[1] == "02"){
+            mes = "febrero";
+        }
+        else if(arreglo[1] == "03"){
+            mes = "marzo";
+        }
+        else if(arreglo[1] == "04"){
+            mes = "abril";
+        }
+        else if(arreglo[1] == "05"){
+            mes = "mayo";
+        }
+        else if(arreglo[1] == "06"){
+            mes = "junio";
+        }
+        else if(arreglo[1] == "07"){
+            mes = "julio";
+        }
+        else if(arreglo[1] == "08"){
+            mes = "agosto";
+        }
+        else if(arreglo[1] == "09"){
+            mes = "septiembre";
+        }
+        else if(arreglo[1] == "10"){
+            mes = "octubre";
+        }
+        else if(arreglo[1] == "11"){
+            mes = "noviembre";
+        }
+        else if(arreglo[1] == "11"){
+            mes = "diciembre";
+        }
+
+        let fechaNew2 = "el día " + arreglo[2]+" de "+ mes +" de "+arreglo[0];
+  
+
         texto = sr+" "+nombre+" "+appaterno+"."+
         "<br>R.U.T.: "+rut+
         "<br>Género: "+genero+
