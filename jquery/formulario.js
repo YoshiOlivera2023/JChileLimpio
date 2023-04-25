@@ -4,17 +4,21 @@ $(document).ready(function() {
 
         event.preventDefault();
 
+        function mayusculaPrimeraLetra(palabra) {
+            return palabra.charAt(0).toUpperCase() + palabra.slice(1).toLowerCase();
+          }
+
         let rut = $("#rut").val();
-        let appaterno = $("#apPaterno").val();
-        let apmaterno = $("#apMaterno").val();
-        let nombre = $("#nombre").val();
+        let appaterno = mayusculaPrimeraLetra($("#apPaterno").val());
+        let apmaterno = mayusculaPrimeraLetra($("#apMaterno").val());
+        let nombre = mayusculaPrimeraLetra($("#nombre").val());
         let fechaNac = $("#fechaNac").val();
         let edad = $("#edad").val();
         let genero = $("#genero").val();
         let email = $("#email").val();
         let celular = $("#celular").val();
-        let profesion = $("#profesion").val();
-        let motivacion = $("#motivacion").val();
+        let profesion = $("#profesion").val().toLowerCase();
+        let motivacion = $("#motivacion").val().toLowerCase();
 
         let sr = "";
         let texto = "";
